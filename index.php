@@ -66,7 +66,7 @@ require_once('auth/authenticate.php');
                             </a>
                         </li>
                         <li>
-                            <a href="javascript:void(0)" onclick="location.href='Shuffle/shufflePractice'"
+                            <a href="javascript:void(0)"
                                 class="flex items-center bg-white hover:bg-yellow-50 rounded-xl font-bold text-lg text-gray-900 py-3 px-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
                                     class="text-lg mr-4" viewBox="0 0 16 16">
@@ -253,51 +253,166 @@ require_once('auth/authenticate.php');
                             </div>
                         </div>
                         <div>
-                            <h2 class="text-2xl font-bold mb-4 mt-10">Your Progress</h2>
+                            <h2 class="text-2xl font-bold mb-5">Your Progress</h2>
+                            
+<div class="p-4 bg-white border rounded-xl text-gray-800 mb-5 space-y-2">
+    <div class="progress">
+        <div class="progress__fill"></div>
+        <div class="progress__text">0%</div>
+        <style>
+            .progress{
+               
+                width: 450px;
+                height: 30px;
+                background: #d5ecff;
+                border-radius: 5px;
+                overflow: hidden;
+            }
+            .progress__fill {
+                width: 0%;
+                height: 100%;
+                background: #88c9fe;
+                transition: all 12s;
+            }
+            .progress__text {
+                position: absolute;
+                top: 25.5%;
+                right: 20px;
+                left: 1100px;
+                font: bold 20px 'Quicksand',sans-serif;
+            }
+            </style>
+            </div>
+</div>
+    <div class="p-4 bg-white border rounded-xl text-gray-800 mb-5 space-y-2">
+    <div class="progress1">
+        <div class="progress__fill1"></div>
+        <div class="progress__text1">0%</div>
+        <style>
+            .progress1{
+               
+                width: 450px;
+                height: 30px;
+                background: #faced7;
+                border-radius: 5px;
+                overflow: hidden;
+            }
+            .progress__fill1 {
+                width: 0%;
+                height: 100%;
+                background: #f14668;
+                transition: all 0.2s;
+            }
+            .progress__text1 {
+                position: absolute;
+                top: 37.5%;
+                right: 20px;
+                left: 1100px;
+                font: bold 20px 'Quicksand',sans-serif;
+            }
+            </style>
+            </div>
+</div>
+<div class="p-4 bg-white border rounded-xl text-gray-800 mb-6 space-y-2">
+<div class="progress2">
+        <div class="progress__fill2"></div>
+        <div class="progress__text2">0%</div>
+        <style>
+            .progress2{
+               
+                width: 450px;
+                height: 30px;
+                background: #bbfdd3;
+                border-radius: 5px;
+                overflow: hidden;
+            }
+            .progress__fill2 {
+                width: 0%;
+                height: 100%;
+                background: #29fc77;
+                transition: all 0.2s;
+            }
+            .progress__text2 {
+                position: absolute;
+                top: 48.5%;
+                right: 20px;
+                left: 1100px;
+                font: bold 20px 'Quicksand',sans-serif;
+            }
+            </style>
+            </div>
+</div>
+<div class="p-4 bg-white border rounded-xl text-gray-800 mb-5 space-y-2">
+<div class="progress3">
+        <div class="progress__fill3"></div>
+        <div class="progress__text3">0%</div>
+        <style>
+            .progress3{
+               
+                width: 450px;
+                height: 30px;
+                background: #ca92e4;
+                border-radius: 5px;
+                overflow: hidden;
+            }
+            .progress__fill3 {
+                width: 0%;
+                height: 100%;
+                background: #a418e4;
+                transition: all 0.2s;
+            }
+            .progress__text3 {
+                position: absolute;
+                top: 60.5%;
+                right: 20px;
+                left: 1100px;
+                font: bold 20px 'Quicksand',sans-serif;
+            }
+            </style>
+            </div>
+</div>
+<div class="p-4 bg-white border rounded-xl text-gray-800 mb-6 space-y-2">
+<div class="progress4">
+        <div class="progress__fill4"></div>
+        <div class="progress__text4">0%</div>
+        <style>
+            .progress4{
+               
+                width: 450px;
+                height: 30px;
+                background: #f8f9d7;
+                border-radius: 5px;
+                overflow: hidden;
+            }
+            .progress__fill4 {
+                width: 0%;
+                height: 100%;
+                background: #eff312;
+                transition: all 0.2s;
+            }
+            .progress__text4 {
+                position: absolute;
+                top: 71.5%;
+                right: 20px;
+                left: 1100px;
+                font: bold 20px 'Quicksand',sans-serif;
+            }
+            </style>
+            </div>
+</div>
+                            
+                            
 
-                            <div class="space-y-4">
-                                <div class="p-4 bg-white border rounded-xl text-gray-800 space-y-2">
-                                    <div class="flex justify-between">
-                                        <div class="text-gray-400 text-xs">Number 10</div>
-                                        <div class="text-gray-400 text-xs">4h</div>
-                                    </div>
-                                    <a href="javascript:void(0)"
-                                        class="font-bold hover:text-yellow-800 hover:underline">Blog and social
-                                        posts</a>
-                                    <div class="text-sm text-gray-600">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
-                                            fill="currentColor" class="text-gray-800 inline align-middle mr-1"
-                                            viewBox="0 0 16 16">
-                                            <path
-                                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
-                                        </svg>Deadline is today
-                                    </div>
-                                </div>
-                                <div class="p-4 bg-white border rounded-xl text-gray-800 space-y-2">
-                                    <div class="flex justify-between">
-                                        <div class="text-gray-400 text-xs">Grace Aroma</div>
-                                        <div class="text-gray-400 text-xs">7d</div>
-                                    </div>
-                                    <a href="javascript:void(0)"
-                                        class="font-bold hover:text-yellow-800 hover:underline">New campaign review</a>
-                                    <div class="text-sm text-gray-600">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
-                                            fill="currentColor" class="text-gray-800 inline align-middle mr-1"
-                                            viewBox="0 0 16 16">
-                                            <path
-                                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
-                                        </svg>New feedback
-                                    </div>
-                                </div>
-                                <div class="p-4 bg-white border rounded-xl text-gray-800 space-y-2">
-                                    <div class="flex justify-between">
-                                        <div class="text-gray-400 text-xs">Petz App</div>
-                                        <div class="text-gray-400 text-xs">2h</div>
-                                    </div>
-                                    <a href="javascript:void(0)"
-                                        class="font-bold hover:text-yellow-800 hover:underline">Cross-platform and
-                                        browser QA</a>
-                                </div>
+                           
+                               
+                                
+                            
+
+                              
+                    
+                                
+                               
+<div class="p-4 bg-white border rounded-xl text-gray-800 space-y-2">
                                 <div class="flex horizontal">
                                 <img class=" w-3/5 " style="" src="https://static.semrush.com/blog/uploads/media/d0/f2/d0f2bce3463dd91de19f1e25c5dcf5c0/3xcyopENXPUAhbxhdcagnWQJ-gwd4HACWDpGv5qpq7ze3DREgLd9qf2VWKDOP20PM3lGGbiqkpWq6Bo4zO5j58FswvIxSkhjWbGA9Ri5ymcGVcyWIe8tXaK0oxBR19ZQ-zM-Vaw.gif" alt="">
                                 &emsp;
